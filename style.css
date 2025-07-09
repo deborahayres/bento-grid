@@ -33,36 +33,36 @@ body {
 }
 
 main {
-  
-  margin: 12rem;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
   background-color: var(--branco-gelo);
   box-shadow: -0.5rem 1.5rem 1rem -0.5rem rgba(0, 0, 0, 0.2),
     0.5rem 1.5rem 1rem -0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .container {
-  width: 100%;
   display: grid;
-  grid-template-columns: repeat (2, 25%);
-  grid-template-rows: repeat(6, 16,66%);
+  grid-template-columns: 11rem 12rem 12rem 9.5rem;
+  grid-template-rows: repeat(6, 1fr);
   gap: 2rem;
   font-family: "DM Sans", sans-serif;
-  margin: 3rem;
+  padding: 3rem 5rem;
+  max-width: 100%;
 }
 
 .item1 {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
   background-color: var(--amarelo-claro);
-  font-size: 1.6rem;
-  font-weight: 500;
-  padding-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 2.5rem;
   padding-left: 1.5rem;
-  height: 20rem;
-  width: 14rem;
-  padding-top: 4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  line-height: 1.4rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.4rem;
 }
 
 .item2 {
@@ -71,56 +71,111 @@ main {
   grid-row: 1 / 3;
   background-color: var(--roxo);
   color: var(--branco);
-  height: 16rem;
-  width: 28rem;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 0.4rem;
 }
 
 .item2_1 {
   font-weight: 600;
-  padding-top: 2rem;
-  height: 11.5rem;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+  line-height: 2.3rem;
 }
 
 .item2_2 {
-  font-size: 1rem;
-  margin-bottom: 5rem;
+  font-size: 0.8rem;
 }
 
 .item3 {
+  position: relative;
   grid-column: 4 / 5;
   grid-row: 1 / 5;
   background-color: var(--roxo-claro);
+  height: 100%;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-top: 1.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1rem;
+  border-radius: 0.4rem;
 }
 
 .item4 {
   grid-column: 1 / 2;
   grid-row: 4 / 7;
   background-color: var(--amarelo);
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  padding: 1.3rem;
+  line-height: 1.2rem;
+  border-radius: 0.4rem;
 }
 
 .item5 {
+  position: relative;
+  align-items: center;
   grid-column: 2 / 3;
   grid-row: 3 / 5;
   background-color: var(--branco);
+  height: 100%;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-top: 5.5rem;
+  padding-left: 1rem;
+  padding-right: 1.1rem;
+  line-height: 1.2rem;
+  border-radius: 0.4rem;
 }
 
 .item6 {
+  position: relative;
   grid-column: 3 / 4;
   grid-row: 3 / 5;
   background-color: var(--amarelo);
+  height: 100%;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1.2rem;
+  border-radius: 0.4rem;
 }
 
 .item7 {
   grid-column: 2 / 3;
   grid-row: 5 / 7;
+  height: 100%;
+  width: 100%;
   background-color: var(--branco);
+  padding: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 0.4rem;
 }
 
 .item8 {
+  position: relative;
   grid-column: 3 / 5;
   grid-row: 5 / 7;
   background-color: var(--roxo);
+  color: var(--branco);
+  height: 100%;
+  width: 100%;
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+  padding-left: 13rem;
+  padding-right: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
 }
 
 .subitem1 {
@@ -136,7 +191,255 @@ main {
   font-style: italic;
 }
 
+.subitem3 {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  width: 8rem;
+  margin-top: 15.5rem;
+  margin-right: 0.9rem;
+  line-height: 0.8rem;
+}
+
 .createpost {
-  padding-top: 1rem;
+  padding-top: 1.2rem;
+  width: 8rem;
+}
+
+.fivestars {
+  height: 1.2rem;
+  margin-top: 1rem;
+}
+
+.grafico {
+  height: 13rem;
+  width: 14rem;
+  clip-path: inset(0 38% 0 0);
+  position: absolute;
+  top: 4.8rem;
+  right: 0.1em;
+  left: 0.8rem;
+}
+
+.ilustracaoia {
+  height: 9rem;
   width: 9rem;
+  margin-top: 1.9rem;
+}
+
+.img_instagram {
+  position: absolute;
+  right: 0.1rem;
+  left: 0.2rem;
+  bottom: 8rem;
+  width: 123%;
+  clip-path: inset(0 20% 0 0);
+}
+
+.calendario {
+  position: absolute;
+  height: 8rem;
+  width: 10rem;
+  top: 7.5rem;
+  right: 1rem;
+  clip-path: inset(0 0 40% 0);
+}
+
+.numero_audiencia {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.audiencia {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.grafico2 {
+  position: absolute;
+  height: 85%;
+  right: 11rem;
+  bottom: 0.8rem;
+}
+
+@media (max-width: 375px) {
+  html,
+  body {
+  }
+
+  main {
+    box-shadow: 0;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .item2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 1.3rem;
+  }
+
+  .item2_1 {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+
+  .item2_2 {
+    font-size: 0.6rem;
+  }
+
+  .item5 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+    font-weight: 500;
+  }
+
+  .item6 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    height: 100%;
+    font-size: 0.8rem;
+    padding-top: 0.8rem;
+    font-weight: 500;
+    line-height: 1rem;
+  }
+
+  .item3 {
+    display: inline;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    text-align: center;
+    padding: 1rem 0.2rem 1rem 0.3rem;
+    margin: 0;
+    gap: 1rem;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .subitem3 {
+    font-size: 0.6rem;
+    display: block;
+    text-align: center;
+    margin-top: 0;
+    line-height: 0.6rem;
+    width: 100%;
+    padding: 10rem 0.9rem 0rem 0.9rem;
+  }
+
+  .item8 {
+    display: flex;
+    align-items: center;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .subitem8 {
+    font-size: 1rem;
+    justify-content: baseline;
+    text-align: center;
+    margin-top: 10rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    line-height: 1rem;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .item7 {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+
+  .item1 {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+    font-size: 0.9rem;
+    padding: 1.2rem;
+    width: 100%;
+    line-height: 0.7rem;
+  }
+
+  .item4 {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    padding: 1;
+  }
+
+  .fivestars {
+    height: 1rem;
+  }
+
+  .img_instagram {
+    position: relative;
+    width: 100%;
+    height: auto;
+    clip-path: inset(0 10% 0 0);
+    padding-top: 1.5rem;
+    padding-right: 0;
+    bottom: 0.5rem;
+  }
+
+  .calendario {
+    position: initial;
+    height: 86%;
+    width: 85%;
+    padding-top: 1rem;
+    clip-path: inset(0 0 9% 0);
+  }
+
+  .grafico {
+    width: 85%;
+    height: 58%;
+    clip-path: inset(0 0 0 0);
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    left: 0.9rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .grafico2 {
+    position: absolute;
+    height: 7.5rem;
+    width: auto;
+    left: 2rem;
+    bottom: 5.5rem;
+  }
+
+  .numero_audiencia {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .audiencia {
+    width: 80%;
+    padding-top: 1rem;
+  }
+
+  .createpost {
+    padding-top: 1.2rem;
+    width: 6.5rem;
+  }
+
+  .ilustracaoia {
+    height: 8rem;
+    width: 8rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
 }
